@@ -87,17 +87,18 @@ img{color: #ffffff;}
 .linea{background-color: #f3610e;}
 
 table{
-    width: fit-content;
+    width: 98%;
     border-width: 1px;
     border-style: solid;
     border-color: rgb(104, 229, 245);
     border-collapse: collapse;
     font-family: 'Poppins', sans-serif;
     font-size: 10pt;
-margin: 10px 20px;
+margin: 10px 2px;
+
+overflow: hidden;
+justify-content: center;
 grid-area: table;
-align-self: center;
-align-content: center;
 }
     /*bordes:ancho estilo y color--collapse para q se junte algunos bordes, mas el de abajo*/
     
@@ -128,11 +129,12 @@ align-content: center;
         margin: 5px 5px;
         border-radius: 5px;
     border: none;
+   
 }
     .elimina{
         background:#A40101;
-        padding: 10px 16px;
-        margin: 5px 5px;
+        padding: 10px 10px;
+        margin: 5px 0px;
         border-radius: 5px;
     border: none}
 
@@ -203,8 +205,7 @@ background-size: cover;}
     .arriba2{
         cursor: pointer;
     }
-    table{ 
-        width: 15%;}
+    
     .iconb{
         color: #ffffff;
         margin: 0px 0px 0px 6px
@@ -234,8 +235,8 @@ background-size: cover;}
       margin: 0 0;
   }
     table{
-      width: 90%;
-      margin: 20px 10px; 
+      width: 100%;
+      margin: 20px 0; 
   }  
   .look{
     display:flex;
@@ -258,8 +259,8 @@ background-size: cover;}
         width: 100%;
     }
     table{
-        width: 90%;
-        margin: 20px 20px;
+        width: 100%;
+        margin: 20px 0px;
     }  
     table th{
         font-weight: bold;
@@ -279,8 +280,8 @@ background-size: cover;}
         width: 100%;
     }
     table{
-        width: 80%;
-        margin: 20px 70px;
+        width: 100%;
+        margin: 20px 0px;
     }  
 table th{
     font-weight: bold;

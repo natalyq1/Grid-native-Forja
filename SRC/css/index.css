@@ -28,7 +28,7 @@ a:link{text-decoration: none;}
 
 header{
     grid-area: header;
-    width: 125%;
+    width: 100%;
     height: auto;
     /*border: 2px solid green;*/
 }
@@ -80,7 +80,7 @@ header{
     margin: 5px 0px 0px 0px;
     border-radius: 20px;
     padding: 0px 9px;
-    /*border: 2px solid red;*/
+    border: 2px solid red;
     }
 .container{
     grid-area: container;
@@ -90,7 +90,7 @@ header{
     
     background-position: bottom;
     width: 95%;
-/*border: 2px solid rgb(128, 0, 96);*/
+border: 2px solid rgb(128, 0, 96);
     display: flex;
 flex-direction: row;
 margin: 0px 0px 0px 10px;
@@ -124,13 +124,14 @@ background-size:cover;
 text-align: justify;
 width: 100%;
 height: auto;
-/*border: 2px solid orangered;*/
+border: 2px solid orangered;
 grid-area: main;
 }
 main h1{color: var(--naranja-color);
 font-size: 20pt;
 padding:3px 10px 0px 10px;
 text-align: center;
+margin: 25px 0px;
 }
 
 main h2{font-size: 25pt;
@@ -143,10 +144,10 @@ padding-left: 90px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top:0px ;
-    margin-left:80px;
+    margin-top:50px ;
+    margin-left:100px;
     border-radius: 20px;
-    margin-bottom: 3px;
+    margin-bottom: 20px;
     border-radius: 20px;
     padding: 0px 9px;
     padding-bottom: 0px;
@@ -177,11 +178,14 @@ padding-left: 90px;
     background-image: url(../img/grisaceo.png);
     background-size: cover;
     width: 100%;
-    /*border: 2px solid greenyellow;*/
+    border: 2px solid greenyellow;
     height: auto;
     margin: none;
+    display: flex;
+    flex-direction: row;
 }
 .flechado{
+    grid-area: flechado;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -209,10 +213,11 @@ align-items: baseline;}
 .titul{
     color:#140f81;
     border-radius: 2px solid var(--verde-color);
-    color: rgba(red, green, blue, alpha);
+    
     margin:0px 4px;
 }
 .flechado2{
+    grid-area: flechado2;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -238,6 +243,13 @@ margin: 5px 30px;
     color: #140f81;
     text-decoration: underline;
 }
+.fondo{
+    display: grid;
+    grid-template-areas:
+    "flechado" 
+    "flechado2";
+}
+
 /*animacion*/
 .zoom{
     animation: 4s zoom 1;
@@ -259,13 +271,18 @@ margin: 5px 30px;
     background-color: black; 
     color: #ffffff;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     width: 100%; 
-    height: 50px;
+    height: auto;
     border-bottom-color: #ffffff;
     border-bottom-width: 0px; 
     margin: 5px auto 0PX AUTO;
-    margin-top: 0px;}
+    margin-top: 0px;
+    overflow: hidden;
+    border: 2px solid red;
+   
+}
    
     .container-grid{
         display: grid;
@@ -284,8 +301,8 @@ margin: 5px 30px;
 @media screen and (min-width:768px){
     
         .container-grid{
-            grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: 300px 0px auto 830px auto auto;
+            grid-template-columns: auto auto ;
+    
             grid-template-areas: 
             "header icon"
             "container container"
@@ -295,7 +312,7 @@ margin: 5px 30px;
             "footer footer" ;
        }
        header{
-        width: 125%;
+        width: 100%;
         height: auto;
         padding: 0px;
         
@@ -339,9 +356,14 @@ margin: 5px 30px;
     /*media*/
     @media screen and (min-width:1024px){
     
+        .fondo{
+            display: grid;
+            grid-template-areas:
+            "flechado flechado2"
+           ;}
         .container-grid{
             grid-template-columns: 100% auto auto;
-    grid-template-rows: 150px 260px 900px auto auto;
+    
             grid-template-areas: 
             "header icon container" 
             "main main main"
@@ -390,12 +412,26 @@ margin: 5px 30px;
         .iniciar2{
             margin-left: 190px;
         }
+        .logoazul{
+            width: 25%; 
+           align-items: center;
+           margin:15px ;
+        }
+        .ajuste{
+            text-align: justify;
+        
+        margin: 10px 30px;
+        }
+        .subraya{text-align: center;
+            margin: 5px 30px;
+            color: #140f81;
+            text-decoration: underline;
+            margin:15px ;
+        }
     }
     /*macro*/
     @media screen and (min-width:1200px){
-    body{
-        background-color: #ffffff;
-    }   
+   
   
     .container-grid{
     max-width: 1024px;

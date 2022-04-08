@@ -24,7 +24,10 @@ html{
 header, main, body{font-family: 'Poppins', sans-serif;
      text-align: center;}
 
-a:link{text-decoration: none;}
+a:link{text-decoration: none; color: none;}
+a{text-decoration: none; color: none;
+
+}
 
 .h8{background-color:rgb(20, 20, 75);;
     font-size: 20pt;
@@ -105,6 +108,7 @@ p{font-size: 12pt;
    padding: 5px 0px;
    
 }
+
 
 .arriba{display: flex;
     flex-direction: row;
